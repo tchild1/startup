@@ -1,11 +1,25 @@
-# startup
-Startup Application for CS 260
+# Startup Application
 
-In doing this assignment I learned so much. 
+## Elevator Pitch
+Have you ever wanted to eat healthier? Have you struggled to keep track of your recepies? Or do you feel like you eat the same thing every day/week?
 
-I now feel that I understand the basics of git and github. 
-I understand that with these tools you can keep previous versions of your code, and have multiple people making edits to the same repsoitory, at the same time, while not ruining anything. (As long as you are careful to resolve conflicts.)
-I understand that when you start, you should do a git pull, to get all the changes from the main branch on your computer.
-Then as you make changes you periodicaly do git commit and push to save those changes on github. 
+PlanMyMeals is an app that assists you in overcoming all these problems. PlanMyMeals stores all of your receipies to a database, and then periodically reccomends them to you as you get on the app to plan you meals every week. PlanMyMeals tracks what you want to eat every week and will create a shopping list of all the items you will need to buy before you make those meals. This app will alleiviate the headache of remembering meal options and compiling a shopping list accordingly.
 
-Also, you should ALWAYS leave good notes as you commit!!! :)
+
+## Design/Images
+<img src="https://user-images.githubusercontent.com/103144986/214979639-88e5889b-0ccf-4b5f-9edf-d71e0d1ef7e4.png" width="350" height="250">
+
+<img src="https://user-images.githubusercontent.com/103144986/214978966-1f2e1add-838d-4c82-bcd3-1236a89bc46a.png" width="350" height="250">
+
+<img src="https://user-images.githubusercontent.com/103144986/214978972-c713ef85-7cf5-4a4a-8660-256e4f5f40df.png" width="350" height="250">
+
+
+## Key Features
+- Each user can log in with their own credentials
+- Individuals can select the meals they want to eat in the coming week
+- The app will pull associated ingredients from the database to compile a shopping list
+- Users can post favorite recepies on a common page to share with each other
+- Users can see who else is on and ask for recepies
+- Ability for users to edit receipies as they wish
+- Suggest receipies that are favorites/have not been eaten in a while
+- Map meals on a calendar
