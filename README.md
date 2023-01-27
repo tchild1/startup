@@ -6,12 +6,14 @@ Have you ever wanted to eat healthier? Have you struggled to keep track of your 
 PlanMyMeals is an app that assists you in overcoming all these problems. PlanMyMeals stores all of your receipies to a database, and then periodically reccomends them to you as you get on the app to plan you meals every week. PlanMyMeals tracks what you want to eat every week and will create a shopping list of all the items you will need to buy before you make those meals. This app will alleiviate the headache of remembering meal options and compiling a shopping list accordingly.
 
 
+
+
 ## Design/Images
-<img src="https://user-images.githubusercontent.com/103144986/214979639-88e5889b-0ccf-4b5f-9edf-d71e0d1ef7e4.png" width="350" height="250">
+![Startup 1](https://user-images.githubusercontent.com/103144986/214980747-8330ef7f-4b8f-4895-ac31-b0a1617cae4f.png)
 
-<img src="https://user-images.githubusercontent.com/103144986/214978966-1f2e1add-838d-4c82-bcd3-1236a89bc46a.png" width="350" height="250">
+![Startup 2](https://user-images.githubusercontent.com/103144986/214980809-63c883e1-6298-49c3-9a16-889e269689cf.png)
 
-<img src="https://user-images.githubusercontent.com/103144986/214978972-c713ef85-7cf5-4a4a-8660-256e4f5f40df.png" width="350" height="250">
+![Startup 3](https://user-images.githubusercontent.com/103144986/214980833-e99cf9a0-1753-4565-8465-55821c133ecb.png)
 
 
 ## Key Features
