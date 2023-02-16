@@ -5,7 +5,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+.loginbutton {
 
+}
 
 .loginBox {
   width: 35vw;
@@ -2988,6 +2990,9 @@ textarea.form-control-lg {
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 16px;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -8630,7 +8635,7 @@ textarea.form-control-lg {
 
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #dbdbdb;
 }
 
 .bg-body-emphasis {
