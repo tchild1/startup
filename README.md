@@ -43,3 +43,9 @@ I now realize that when I wrote (very) basic HTML for another class, I was tryin
 I learned how to use LiveServer to view my HTML as I edited it :) That was really nice.
 
 Finally, I realized that I had an error in the deployment script filepath that didn't allow me to deploy my changes to the site. I was able ti fix this and resolve the error.
+
+
+As I have applied CSS to my Startup application and my Simon application, I have learned so much about how CSS works. 
+- Very importantly, I became familiar with how one bit of CSS can overwrite another. That is important if you want to overwrite a piece, you have to be aware of where you are putting it
+- I also have become very comfortable with media queries. These are very important so that my web page can be displayed on both desktop and mobile. 
+- As I have been practicing more with CSS, I have also become much better at debugging issues. If something isn't displaying as I had been expecting, I am now very comfortable using the chrome debugger to see where the issue might be.
