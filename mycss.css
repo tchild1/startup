@@ -125,6 +125,7 @@
 .UpcomingMealsTabs {
   margin: 20px;
   width: 40vw;
+  height: 350px;
 
 }
 
@@ -339,4 +340,12 @@
   
 .fix {
   overflow-x: hidden;
+}
+
+.widenButton {
+  border-top: 16px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-left: 15%;
 }
