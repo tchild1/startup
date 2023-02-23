@@ -1,6 +1,7 @@
 .homeQuestion {
   text-align: center;
-  margin-top: 15px;;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .loginBox {
@@ -123,10 +124,8 @@
 }
 
 .UpcomingMealsTabs {
-  margin: 20px;
-  width: 40vw;
-  height: 350px;
-
+  margin: 1vw;
+  width: 70vw;
 }
 
 
@@ -153,13 +152,14 @@
 
 
 .AllUpcomingMeals {
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
-  width: 100%;
+  align-items: center;
 }
 
 .cardButtons {
   padding-left: 20px;
+  height: 150px;
 }
 
   
@@ -205,6 +205,10 @@
       background-clip: border-box;
       border: var(--bs-card-border-width) solid var(--bs-card-border-color);
       border-radius: var(--bs-card-border-radius);
+    }
+
+    .fixheight {
+      height: 350px;
     }
 }
   
@@ -325,18 +329,6 @@
   }
 }
 
-@media (max-width: 800px) {
-  .AllUpcomingMeals {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-  }
-
-  .UpcomingMealsTabs {
-    margin: 1vw;
-    width: 70vw;
-  }
-}
   
 .fix {
   overflow-x: hidden;
@@ -346,6 +338,62 @@
   border-top: 16px;
   width: 50%;
   position: absolute;
-  bottom: 0;
   margin-left: 15%;
+}
+
+.flexSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+
+@media (max-width: 1200px) {
+  .loginBox {
+    width: 50vw;
+    height: 200px;
+    position: absolute;
+    top:0;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .mealSelectCard {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+  }
+
+  .fixheight {
+    height: 350px;
+  }
 }
