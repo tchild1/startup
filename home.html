@@ -11,7 +11,7 @@
     <link href="mycss.css" rel="stylesheet">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">PlanMyMeals</a>
+        <a class="navbar-brand" href="index.html">PlanMyMeals</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,12 +20,12 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="home.html">Home</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sign-up</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -34,40 +34,107 @@
     <section class="homeQuestion">
         <h3>What Would You Like to do?</h3>
 
-        <button type="button" class="homeButtons btn btn-light">Plan My Meals!</button>
-        <button type="button" class="homeButtons btn btn-light">See Grocery List</button>
-        <button type="button" class="homeButtons btn btn-light">Add A Recipie</button>
-        <button type="button" class="homeButtons btn btn-light">Share/Find Meals</button>
+        <a href="planPage.html"><button type="button" class="homeButtons btn btn-light">Plan My Meals!</button></a>
+        <a href="groceryList.html"><button type="button" class="homeButtons btn btn-light">See Grocery List</button></a>
+        <a href="addRecepie.html"><button type="button" class="homeButtons btn btn-light">Add A Recipie</button></a>
+        <a href="shareMeals.html"><button type="button" class="homeButtons btn btn-light">Share/Find Meals</button></a>
     </section>
+    
+    <section class="homeQuestion">
+        <h3>Upcoming Meals:</h3>
+    </section>
+<br>
+    <div class="AllUpcomingMeals">
 
-    <div class="AllUpcomingMealshome">
-        
-        <div class="UpcomingMealsTabs card">
-            <img src="https://i.pinimg.com/474x/d2/b2/dc/d2b2dc893543463bfdcf979f4889dd5c.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Monday</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+        <section class="flexSectionOuter">
+            <section class="flexSectionInner">
             
-        <div class="UpcomingMealsTabs card">
-            <img src="https://i.pinimg.com/474x/d2/b2/dc/d2b2dc893543463bfdcf979f4889dd5c.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Tuesday</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
+                    <img src="https://i.pinimg.com/474x/65/00/06/650006cec1a1292d5924c110252f4453.jpg" class="card-img-top" alt="...">
+                    <div class="cardButtons card-body">
+                    <h5 class="card-title">Monday</h5>
+                    <p class="card-text">[Meal Name]</p>
+                    <button type="button"  class="widenButton btn btn-primary">View Meal</button>
+                    </div>
+                </div>
+                    
+                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
+                    <img src="https://i.pinimg.com/474x/d2/b2/dc/d2b2dc893543463bfdcf979f4889dd5c.jpg" class="card-img-top" alt="...">
+                    <div class="cardButtons card-body">
+                    <h5 class="card-title">Tuesday</h5>
+                    <p class="card-text">[Meal Name]</p>
+                    <button type="button"  class="widenButton btn btn-primary">View Meal</button>
+                    </div>
+                </div>
 
-        <div class="UpcomingMealsTabs card">
-            <img src="https://i.pinimg.com/474x/4a/9c/0d/4a9c0dbe4ec4a452e9ba4edf9cc8230a.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-            <h5 class="card-title">Wednesday</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+            </section>
+
+            <section class="flexSectionInner">
+                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
+                    <img src="https://i.pinimg.com/474x/65/00/06/650006cec1a1292d5924c110252f4453.jpg" class="card-img-top" alt="...">
+                    <div class="cardButtons card-body">
+                    <h5 class="card-title">Wednesday</h5>
+                    <p class="card-text">[Meal Name]</p>
+                    <button type="button"  class="widenButton btn btn-primary">View Meal</button>
+                    </div>
+                </div>
+                    
+                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
+                    <img src="https://i.pinimg.com/474x/d2/b2/dc/d2b2dc893543463bfdcf979f4889dd5c.jpg" class="card-img-top" alt="...">
+                    <div class="cardButtons card-body">
+                    <h5 class="card-title">Thursday</h5>
+                    <p class="card-text">[Meal Name]</p>
+                    <button type="button"  class="widenButton btn btn-primary">View Meal</button>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="flexSectionOuter">
+
+            <section class="flexSectionInner">
+                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
+                    <img src="https://i.pinimg.com/474x/65/00/06/650006cec1a1292d5924c110252f4453.jpg" class="card-img-top" alt="...">
+                    <div class="cardButtons card-body">
+                    <h5 class="card-title">Friday</h5>
+                    <p class="card-text">[Meal Name]</p>
+                    <button type="button"  class="widenButton btn btn-primary">View Meal</button>
+                    </div>
+                </div>
+                    
+                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
+                    <img src="https://i.pinimg.com/474x/d2/b2/dc/d2b2dc893543463bfdcf979f4889dd5c.jpg" class="card-img-top" alt="...">
+                    <div class="cardButtons card-body">
+                    <h5 class="card-title">Saturday</h5>
+                    <p class="card-text">[Meal Name]</p>
+                    <button type="button"  class="widenButton btn btn-primary">View Meal</button>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="flexSectionInner">
+                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
+                    <img src="https://i.pinimg.com/474x/65/00/06/650006cec1a1292d5924c110252f4453.jpg" class="card-img-top" alt="...">
+                    <div class="cardButtons card-body">
+                    <h5 class="card-title">Sunday</h5>
+                    <p class="card-text">[Meal Name]</p>
+                    <button type="button"  class="widenButton btn btn-primary">View Meal</button>
+                    </div>
+                </div>
+                    
+                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
+                    <img src="https://i.pinimg.com/474x/d2/b2/dc/d2b2dc893543463bfdcf979f4889dd5c.jpg" class="card-img-top" alt="...">
+                    <div class="cardButtons card-body">
+                    <h5 class="card-title">Monday</h5>
+                    <p class="card-text">[Meal Name]</p>
+                    <button type="button"  class="widenButton btn btn-primary">View Meal</button>
+                    </div>
+                </div>
+
+            </section>
+        </section>
             
     </div>
 

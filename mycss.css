@@ -28,7 +28,6 @@
     margin: auto;
 }
   
-  
 .btn {
     --bs-btn-padding-x: 0.75rem;
     --bs-btn-padding-y: 0.375rem;
@@ -171,7 +170,7 @@
 @media (max-width: 1200px) {
     .loginBox {
       width: 50vw;
-      height: 200px;
+      height: fit-content;
       position: absolute;
       top:0;
       bottom: 50px;
@@ -356,10 +355,15 @@
   margin-left: 15%;
 }
 
-.flexSection {
+.flexSectionOuter {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  align-items: center;
+}
+
+.flexSectionInner {
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -371,12 +375,36 @@
   }
 }
 
+@media (max-width: 950px) {
+  .flexSectionOuter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 950px) {
+  .flexSectionOuter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .flexSectionInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 
 @media (max-width: 1200px) {
   .loginBox {
     width: 50vw;
-    height: 200px;
+    height: fit-content;
     position: absolute;
     top:0;
     bottom: 50px;
@@ -419,10 +447,10 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .loginBox {
-    width: 50vw;
-    height: 200px;
+    width: 90vw;
+    height: fit-content;
     position: absolute;
     top:0;
     bottom: 50px;
@@ -466,7 +494,7 @@
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   .input-group {
     position: relative;
     display: flex;
@@ -478,4 +506,20 @@
 
 img {
   height: 250px;
+}
+
+.width80 {
+  width: 80%;
+}
+
+.centerButton {
+  margin-left: 40%;
+  width: 20%;
+}
+
+@media (max-width: 600px) {
+  .centerButton {
+    margin-left: 35%;
+    width: 120px;
+  }
 }
