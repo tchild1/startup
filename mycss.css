@@ -523,3 +523,8 @@ img {
     width: 120px;
   }
 }
+
+.loginbuttona {
+  text-decoration: none;
+  color: white;
+}

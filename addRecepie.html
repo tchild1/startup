@@ -34,13 +34,13 @@
         </div>
       </nav>
     <section class="homeQuestion">
-        <h3>Add Your Recipie: </h3>
+        <h3>Add Your Recipe: </h3>
     </section>
     <br>
     <div class="mb-3">
         <div class="input-group">
           <span class="input-group-text" id="basic-addon3">Recepie Name:</span>
-          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+          <input type="text" class="form-control" id="RecipeName" aria-describedby="basic-addon3">
         </div>
     </div>
     <br>
@@ -48,9 +48,10 @@
         <h1 class="input-group form-text">Please enter ingredients as a bulleted list:</h1>
     <div class="input-group">
         <span class="input-group-text">Ingredients: </span>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
+        <textarea class="form-control" aria-label="With textarea" id="RecipeIngredients"></textarea>
     </div>
     </div>
-    <button type="button" class="centerButton btn btn-primary">Add Recepie</button>
+    <button id="addRecipeButton" type="button" class="centerButton btn btn-primary" onclick="addrecipe()">Add Recepie</button>
+    <script src="addRecepie.js"></script>
 </body>
 </html>
