@@ -49,3 +49,8 @@ As I have applied CSS to my Startup application and my Simon application, I have
 - Very importantly, I became familiar with how one bit of CSS can overwrite another. That is important if you want to overwrite a piece, you have to be aware of where you are putting it
 - I also have become very comfortable with media queries. These are very important so that my web page can be displayed on both desktop and mobile. 
 - As I have been practicing more with CSS, I have also become much better at debugging issues. If something isn't displaying as I had been expecting, I am now very comfortable using the chrome debugger to see where the issue might be.
+
+
+As I did the simon and startup JS, I realized that I had to be Very careful to spell everything correctly and to make sure I wasn't sitting on an await. (I did this when I forgot to add the sound files.) 
+
+I also feel like I have learned LOTS and become very comfortable at manipulaing the DOM using JS. On my Startup project I dynamically re-created the whole page using JS to show meal objects that the person put on their queue
