@@ -73,5 +73,18 @@ JS const f = y => ++y;
 console.log(f(3));
 (answer = 4)
 
+JS List methods:
+1. map( )
+This method creates a new array with the results of calling a provided function on every element in this array.
 
+2. filter( )
+This method creates a new array with only elements that passes the condition inside the provided function.
 
+3. sort( )
+This method is used to arrange/sort array’s elements either in ascending or descending order. 
+
+4. forEach( )
+This method helps to loop over array by executing a provided callback function for each element in an array.
+
+5. concat( )
+This method is used to merge two or more arrays and returns a new array, without changing the existing arrays.
