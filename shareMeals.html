@@ -11,7 +11,7 @@
     <link href="mycss.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="shareableMeals()">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">PlanMyMeals</a>
@@ -44,98 +44,29 @@
         </div>
       </div>
 
-    <div class="AllUpcomingMeals">
+      <div class="AllUpcomingMeals">
 
-        <section class="flexSectionOuter">
-            <section class="flexSectionInner">
+        <section id="upcomingTop" class="flexSectionOuter">
+            <section id="upcomingTopTop" class="flexSectionInner">
             
-                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
-                    <img src="https://i.pinimg.com/474x/65/00/06/650006cec1a1292d5924c110252f4453.jpg" class="card-img-top" alt="...">
-                    <div class="cardButtons card-body">
-                    <h5 class="card-title">Soup</h5>
-                    <p class="card-text">Description of the Meal</p>
-                    <button type="button"  class="widenButton btn btn-primary">Select</button>
-                    </div>
-                </div>
-                    
-                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
-                    <img src="https://i.pinimg.com/474x/d2/b2/dc/d2b2dc893543463bfdcf979f4889dd5c.jpg" class="card-img-top" alt="...">
-                    <div class="cardButtons card-body">
-                    <h5 class="card-title">Soup</h5>
-                    <p class="card-text">Description of the Meal</p>
-                    <button type="button"  class="widenButton btn btn-primary">Select</button>
-                    </div>
-                </div>
-
             </section>
 
-            <section class="flexSectionInner">
-                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
-                    <img src="https://i.pinimg.com/474x/65/00/06/650006cec1a1292d5924c110252f4453.jpg" class="card-img-top" alt="...">
-                    <div class="cardButtons card-body">
-                    <h5 class="card-title">Wraps</h5>
-                    <p class="card-text">Description of the Meal</p>
-                    <button type="button"  class="widenButton btn btn-primary">Select</button>
-                    </div>
-                </div>
-                    
-                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
-                    <img src="https://i.pinimg.com/474x/d2/b2/dc/d2b2dc893543463bfdcf979f4889dd5c.jpg" class="card-img-top" alt="...">
-                    <div class="cardButtons card-body">
-                    <h5 class="card-title">Wraps</h5>
-                    <p class="card-text">Description of the Meal</p>
-                    <button type="button"  class="widenButton btn btn-primary">Select</button>
-                    </div>
-                </div>
+            <section id="upcomingTopBottom" class="flexSectionInner">
+
             </section>
 
         </section>
 
-        <section class="flexSectionOuter">
+        <section id="upcomingBottom" class="flexSectionOuter">
 
-            <section class="flexSectionInner">
-                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
-                    <img src="https://i.pinimg.com/474x/65/00/06/650006cec1a1292d5924c110252f4453.jpg" class="card-img-top" alt="...">
-                    <div class="cardButtons card-body">
-                    <h5 class="card-title">Wraps</h5>
-                    <p class="card-text">Description of the Meal</p>
-                    <button type="button"  class="widenButton btn btn-primary">Select</button>
-                    </div>
-                </div>
-                    
-                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
-                    <img src="https://i.pinimg.com/474x/d2/b2/dc/d2b2dc893543463bfdcf979f4889dd5c.jpg" class="card-img-top" alt="...">
-                    <div class="cardButtons card-body">
-                    <h5 class="card-title">Wraps</h5>
-                    <p class="card-text">Description of the Meal</p>
-                    <button type="button"  class="widenButton btn btn-primary">Select</button>
-                    </div>
-                </div>
+            <section id="upcomingBottomTop" class="flexSectionInner">
 
             </section>
 
-            <section class="flexSectionInner">
-                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
-                    <img src="https://i.pinimg.com/474x/65/00/06/650006cec1a1292d5924c110252f4453.jpg" class="card-img-top" alt="...">
-                    <div class="cardButtons card-body">
-                    <h5 class="card-title">Wraps</h5>
-                    <p class="card-text">Description of the Meal</p>
-                    <button type="button"  class="widenButton btn btn-primary">Select</button>
-                    </div>
-                </div>
-                    
-                <div class="mealSelectCard fixheight UpcomingMealsTabs card">
-                    <img src="https://i.pinimg.com/474x/d2/b2/dc/d2b2dc893543463bfdcf979f4889dd5c.jpg" class="card-img-top" alt="...">
-                    <div class="cardButtons card-body">
-                    <h5 class="card-title">Wraps</h5>
-                    <p class="card-text">Description of the Meal</p>
-                    <button type="button"  class="widenButton btn btn-primary">Select</button>
-                    </div>
-                </div>
+            <section id="upcomingBottomBottom" class="flexSectionInner">
 
             </section>
         </section>
-            
     </div>
 
     <section class="homeQuestion">
@@ -148,65 +79,9 @@
         </div>
       </div>
     <br>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Contact 1</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Contact 2</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Contact 3</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Contact 4</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Contact 5</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Contact 6</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Contact 7</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 8</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 9</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 10</div>
-    </div>
+    <section id="contactList">
+
+    </section>
+    <script src="shareMeals.js"></script>
 </body>
 </html>
