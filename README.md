@@ -1,4 +1,4 @@
-# Startup Application
+# Starrtup Application
 
 ## Elevator Pitch
 Have you ever wanted to eat healthier? Have you struggled to keep track of your recepies? Or do you feel like you eat the same thing every day/week?
@@ -88,3 +88,96 @@ This method helps to loop over array by executing a provided callback function f
 
 5. concat( )
 This method is used to merge two or more arrays and returns a new array, without changing the existing arrays.
+
+9. join( )
+This method returns a new string by concatenating all of the array’s elements separated by the specified separator.
+
+10. reduce( )
+This method applies a function against an accumulator and each element in the array to reduce it to a single value. (basically sum all of the elements in an array if you did .reduce((total, current) => total + current);
+
+11. find( )
+This method returns the value of the first element in an array that pass the test in a testing function.
+
+12. findIndex( )
+This method returns the index of the first element in an array that pass the test in a testing function.
+
+18. pop( )
+This method removes the last element from the end of array and returns that element.
+
+html	The page container
+head	Header information
+title	Title of the page
+meta	Metadata for the page such as character set or viewport settings
+script	JavaScript reference. Either a external reference, or inline
+include	External content reference
+body	The entire content body of the page
+header	Header of the main content
+footer	Footer of the main content
+nav	Navigational inputs
+main	Main content of the page
+section	A section of the main content
+aside	Aside content from the main content
+div	A block division of content
+span	An inline span of content
+h<1-9>	Text heading. From h1, the highest level, down to h9, the lowest level
+p	A paragraph of text
+b	Bring attention
+table	Table
+tr	Table row
+th	Table header
+td	Table data
+ol,ul	Ordered or unordered list
+li	List item
+a	Anchor the text to a hyperlink
+img	Graphical image reference
+dialog	Interactive component such as a confirmation
+form	A collection of user input
+input	User input field
+audio	Audio content
+video	Video content
+svg	Scalable vector graphic content
+iframe	Inline frame of another HTML page
+
+&	&amp;
+<	&lt;
+>	&gt;
+"	&quot;
+'	&apos;
+😀	&#128512;
+
+.match() returns everything that matches the regex contained
+
+.map() does the contained function to each member of a list
+
+document.querySelector('p').addEventListener(asdfsdfsdf) -this only applies the event listener to the first p tag, not all
+
+valid functions:
+const f = (x) => {}
+function f(x) {}
+const f = function(x) {}
+
+
+JS object example:
+{ n:1 }
+
+textContent:
+sets the child text for the an element
+
+
+how to create a hyperlink:
+<a href='https://c.com'>x</a>
+
+will turn only the text in a div with class header blue:
+div.header { color: blue; }
+
+Valid JSON:
+{"x":3}
+
+Makes a script executable:
+chmod +x deploy.sh
+
+
+to point to another DNS record, you hsould use: CNAME
+
+80 insuecure
+443 secure
