@@ -178,7 +178,7 @@ chmod +x deploy.sh
 
 
 to point to another DNS record, you hsould use: CNAME
-
+F
 80 insuecure
 443 secure
 
