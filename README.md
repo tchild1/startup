@@ -181,3 +181,82 @@ to point to another DNS record, you hsould use: CNAME
 
 80 insuecure
 443 secure
+
+
+Deployment
+-k provides the credential file necessary to access your production environment
+-h parameters is the domain name of your production environment
+-s parameter represents the name of the application you are deploying (either simon or startup)
+ssh is how we execute the commands remotely using the secure shell program
+scp is the secure copy program
+
+
+The console
+Pwd -lets you see the present working directory
+ls -la lets you see the files in the directory you’re in (la let’s you see the hidden ones)
+echo - Output the parameters of the command
+cd - Change directory
+mkdir - Make directory
+rmdir - Remove directory
+rm - Remove file(s)
+mv - Move file(s)
+cp - Copy files
+ls - List files
+curl - Command line client URL browser
+grep - Regular expression search
+find - Find files
+top - View running processes with CPU and memory usage
+df - View disk statistics
+cat - Output the contents of a file
+less - Interactively output the contents of a file
+wc - Count the words in a file
+ps - View the currently running processes
+kill - Kill a currently running process
+sudo - Execute a command as a super user (admin)
+ssh - Create a secure shell on a remote computer
+scp - Securely copy files to a remote computer
+history - Show the history of commands
+ping - Check if a website is up
+tracert - Trace the connections to a website
+dig - Show the DNS information for a domain
+man - Look up a command in the manual
+Chaining commands:
+| - Take the output from the command on the left and pipe, or pass, it to the command on the right
+> - Redirect output to a file. Overwrites the file if it exists
+>> - Redirect output to a file. Appends if the file exists
+VI/VIM
+Keystroke - meaning
+:h - help
+I - enter insert mode. This will allow you to type and delete text. Use ESC to exit insert mode. No other commands will work while in insert mode.
+U - undo
+CTRL-r - redo
+gg - go to beginning of file
+G - go to end of file
+/ - search for text that you type after /
+n - next search match
+N - previous search match
+v - visually select text
+y - yank or copy selected text to clipboard
+p - paste clipboard
+CTRL-wv - Split window vertically
+CTRL-ww - Toggle windows
+CTRL-wq - Close current window
+:e - Open a file. Type ahead available. If you open a directory you can navigate it in the window
+:w - write file (save)
+:q - quit. Use :q! to exit without saving
+
+
+What is A? (DNS record)
+
+‘i’ is in case sensitive in regex
+
+
+JSON requires “” Java script does not
+
+At the top of the TCP/IP protocol is the application layer. It represents user functionality, such as the web (HTTP), mail (SMTP), files (FTP), remote shell (SSH), and chat (IRC).
+
+
+We can run web service code and use the console application ‘curl’ to make an HTTP request and see the time response
+A web server is a computing device that is hosting a web service that knows how to accept incoming internet connections and speak the HTTP application protocol.
+HTTPS, TLS, and web certificates
+The secure version of HTTP is called Secure Hypertext Transport Protocol (HTTPS). This is basically HTTP with a negotiated secure connection that happens before any data is exchanged. Having a secure connection means that all the data is encrypted using the TLS protocol. TLS is sometimes referred to by a now unsecure predecessor protocol named SSL. TLS works by negotiating a shared secret that is then used to encrypt data. You can see the actual negotiation that happens by using the console browser based application curl, along with the -v parameter to see the verbose output of the HTTPS exchange. The > /dev/null redirection throws away the actual HTTP response, since we only care about the negotiation, by redirecting the output to the null device.
