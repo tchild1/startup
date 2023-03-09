@@ -101,7 +101,3 @@ function shareableMeals() {
     }
 }
 
-function contacts() {
-    
-}
-
