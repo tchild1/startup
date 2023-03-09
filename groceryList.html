@@ -11,7 +11,7 @@
     <link href="mycss.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="neededIngredients()">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">PlanMyMeals</a>
@@ -36,66 +36,10 @@
     <section class="homeQuestion">
         <h3>Your Grocery List:</h3>
     </section>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 1</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 2</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 3</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 4</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 5</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 6</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 7</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 8</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 9</div>
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-text">
-          <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-        </div>
-        <div type="text" class="form-control" aria-label="Text input with checkbox">Item 10</div>
-    </div>
-      
+    <section id="ingredientList">
+
+    </section>
+    
+    <script src="groceryList.js"></script>
 </body>
 </html>
