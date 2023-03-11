@@ -15,6 +15,47 @@ if (listOfUpcomingMeals === null) {
 }
 
 function upcomingMeals() {
+    if (listOfUpcomingMeals.length === 0) {
+        let mealCard = document.createElement("div")
+        mealCard.classList.add("mealSelectCard")
+        mealCard.classList.add("fixheight")
+        mealCard.classList.add("UpcomingMealsTabs")
+        mealCard.classList.add("card")
+
+        let cardImage = document.createElement("img")
+        cardImage.classList.add("card-img-top")
+        cardImage.src ="https://i.pinimg.com/564x/d2/b2/dc/d2b2dc893543463bfdcf979f4889dd5c.jpg"
+        
+        let mealCardBody = document.createElement("div")
+        mealCardBody.classList.add("cardButtons")
+        mealCardBody.classList.add("card-body")
+
+        let cardTitle = document.createElement("h5")
+        let cardTitleText = document.createTextNode(`Click 'Plan My Meals!'`)
+        cardTitle.classList.add("card-title")
+        cardTitle.appendChild(cardTitleText)
+
+        let cardDescription = document.createElement("p")
+        let cardDescriptionText = document.createTextNode(`Plan to see upcoming meals.`)
+        cardDescription.classList.add("card-text")
+        cardDescription.appendChild(cardDescriptionText)
+
+        let cardButton = document.createElement("button")
+        let buttonText = document.createTextNode("Plan Meals!")
+        cardButton.classList.add("widenButton")
+        cardButton.classList.add("btn")
+        cardButton.classList.add("btn-primary")
+        cardButton.appendChild(buttonText)
+        cardButton.addEventListener("click", function gotoplan() {window.location.href = 'daySelector.html'});
+
+        mealCard.appendChild(cardImage)
+        mealCard.appendChild(mealCardBody)
+        mealCardBody.appendChild(cardTitle)
+        mealCardBody.appendChild(cardDescription)
+        mealCardBody.appendChild(cardButton)
+
+        document.getElementById("upcomingTopTop").appendChild(mealCard)
+    }
     for (let upcomingMeal=0; upcomingMeal<listOfUpcomingMeals.length; upcomingMeal++) {
         let mealCard = document.createElement("div")
         mealCard.classList.add("mealSelectCard")
@@ -223,6 +264,10 @@ function mealSelected(meal) {
     listOfUpcomingMeals.push(meal)
     localStorage.setItem("Upcoming Meals", JSON.stringify(listOfUpcomingMeals));
 
+    console.log(new Date(Math.abs(window.localStorage.getItem("Date Planned") + (window.localStorage.getItem("Number Of Days Planned") * 24 * 60 * 60 * 1000))))
+    
+        // document.getElementById("dayOfWeek").innerHTML = (Math.abs(window.localStorage.getItem("Date Planned") + (window.localStorage.getItem("Number Of Days Planned") * 24 * 60 * 60 * 1000)))
+
     if (document.getElementById("dayOfWeek").innerHTML === "Sunday") {
         window.location.href = "home.html"
     } else {
@@ -271,7 +316,7 @@ function shareableMeals() {
         cardDescription.appendChild(cardDescriptionText)
 
         let cardButton = document.createElement("button")
-        let buttonText = document.createTextNode("View Meal")
+        let buttonText = document.createTextNode("Share Meal!")
         cardButton.classList.add("widenButton")
         cardButton.classList.add("btn")
         cardButton.classList.add("btn-primary")
@@ -388,3 +433,16 @@ function searchContacts() {
         }
     }
 }
+
+
+function planUntil() {
+    window.location.href = "planPage.html"
+
+    const diffTime = Math.abs(new Date(`${document.getElementById("SelectedDate").value}`) - new Date())
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))  
+
+    window.localStorage.setItem('Date Planned', new Date())
+    window.localStorage.setItem('Number Of Days to Plan', diffDays)
+    window.localStorage.setItem('Number Of Days Planned', 0)
+}
+

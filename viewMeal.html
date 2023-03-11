@@ -11,7 +11,7 @@
     <link href="mycss.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
-<body onload="shareableMeals()">
+<body onload="neededIngredients()">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">PlanMyMeals</a>
@@ -33,57 +33,13 @@
           </div>
         </div>
       </nav>
-      <section class="homeQuestion">
-        <h3>Who would you like to share it with? </h3>
-    </section>
-    <div class="mb-3">
-        <div class="input-group">
-          <span class="input-group-text" id="basic-addon3">Search:</span>
-          <input type="text" class="contactList form-control" id="basic-url2" aria-describedby="basic-addon3" onkeyup="searchContacts()">
-        </div>
-      </div>
-    <br>
-    <section id="contactList">
-
-    </section>
-
     <section class="homeQuestion">
-        <h3>Select a Recepie to Share: </h3>
+        <h3 id="MealName"></h3>
     </section>
+    <section>
 
-    <div class="mb-3">
-        <div class="input-group">
-          <span class="input-group-text" id="basic-addon3">Search:</span>
-          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-        </div>
-      </div>
-
-      <div class="AllUpcomingMeals">
-
-        <section id="upcomingTop" class="flexSectionOuter">
-            <section id="upcomingTopTop" class="flexSectionInner">
-            
-            </section>
-
-            <section id="upcomingTopBottom" class="flexSectionInner">
-
-            </section>
-
-        </section>
-
-        <section id="upcomingBottom" class="flexSectionOuter">
-
-            <section id="upcomingBottomTop" class="flexSectionInner">
-
-            </section>
-
-            <section id="upcomingBottomBottom" class="flexSectionInner">
-
-            </section>
-        </section>
-    </div>
-
-
+    </section>
+    
     <script src="allJS.js"></script>
 </body>
 </html>
