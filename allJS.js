@@ -233,7 +233,7 @@ function potentialMeals() {
         cardDescription.appendChild(cardDescriptionText)
 
         let cardButton = document.createElement("button")
-        let buttonText = document.createTextNode("View Meal")
+        let buttonText = document.createTextNode("Plan this Meal!")
         cardButton.classList.add("widenButton")
         cardButton.classList.add("btn")
         cardButton.classList.add("btn-primary")
